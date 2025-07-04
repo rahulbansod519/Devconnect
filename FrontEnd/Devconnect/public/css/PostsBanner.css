@@ -1,0 +1,151 @@
+/* Your existing styles */
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.main-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-left: 420px; /* Updated for new banner width */
+  margin-top: 70px; /* Space for navbar */
+  padding: 2rem;
+}
+
+/* Posts Banner Styles - Updated width and centered */
+.posts-banner-container {
+  position: fixed;
+  left: 50%;
+  top: 85px; /* Below navbar */
+  transform: translateX(-50%); /* Center horizontally */
+  width: 500px; /* Increased from 320px */
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #3b82f6; /* Changed to full border */
+  border-radius: 12px; /* Added rounded corners */
+  height: calc(100vh - 80px); /* Account for navbar height */
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.posts-banner-header {
+  padding: 24px;
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  color: white;
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.posts-banner-title {
+  font-size: 22px; /* Slightly larger */
+  font-weight: bold;
+  margin: 0;
+}
+
+.posts-banner-subtitle {
+  color: #dbeafe;
+  font-size: 14px;
+  margin: 4px 0 0 0;
+}
+
+.posts-container {
+  padding: 20px; /* Increased padding */
+}
+
+.post-card {
+  background-color: #f9fafb;
+  border-radius: 10px; /* More rounded */
+  padding: 18px; /* Increased padding */
+  margin-bottom: 18px; /* More spacing */
+  border-left: 4px solid #3b82f6;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.post-card:hover {
+  background-color: #eff6ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px); /* Added lift effect */
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.post-category {
+  display: inline-block;
+  padding: 6px 14px; /* Increased padding */
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 20px;
+}
+
+.post-date {
+  font-size: 12px;
+  color: #6b7280;
+  background-color: #e5e7eb;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.post-title {
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 8px 0;
+  font-size: 15px; /* Slightly larger */
+  line-height: 1.4;
+}
+
+.post-excerpt {
+  font-size: 13px; /* Slightly larger */
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.post-read-more {
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.read-more-link {
+  font-size: 12px;
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.read-more-link:hover {
+  color: #1d4ed8;
+}
+
+.posts-banner-footer {
+  padding: 20px; /* Increased padding */
+  background-color: #f3f4f6;
+  text-align: center;
+  border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+}
+
+.view-all-button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px; /* Increased padding */
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.view-all-button:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px); /* Added lift effect */
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
