@@ -1,6 +1,6 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// import HomePage from './components/HomePage'
+
 import Layout from "./Layout";
 import {
   PostsBannerList,
@@ -9,7 +9,8 @@ import {
 import { PostView, fetchPostbyId } from "./components/PostView";
 import PostForm from "./components/PostForm";
 import { AuthorPost } from "./components/authorPost";
-// import  SignInPage  from "./components/Login";
+
+import ConnectedCard from "./components/ConnectedCard";
 
 const routes = [
   {
@@ -35,9 +36,11 @@ const routes = [
       {
         path: "posts/author",
         element: <AuthorPost />,
-   
-      }
-
+      },
+      {
+        path: "user/getConnection",
+        element: <ConnectedCard />,
+      },
     ],
   },
 ];

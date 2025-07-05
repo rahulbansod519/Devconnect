@@ -31,7 +31,16 @@ export default function NavBar() {
               </a>
             </li>
             </SignedIn>
-    
+
+            <SignedIn>
+            <li className="navbar-item">
+              <a href="/user/getConnection" className="navbar-link">
+                <span className="link-icon">📝</span>
+                Your Connections
+              </a>
+            </li>
+            </SignedIn>
+  
           </ul>
 
           <div className="navbar-actions">

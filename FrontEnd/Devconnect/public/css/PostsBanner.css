@@ -16,7 +16,7 @@
 /* Posts Banner Styles - Updated width and centered */
 .posts-banner-container {
   position: fixed;
-  left: 50%;
+  left: 48%;
   top: 85px; /* Below navbar */
   transform: translateX(-50%); /* Center horizontally */
   width: 500px; /* Increased from 320px */
@@ -148,4 +148,17 @@
   background-color: #2563eb;
   transform: translateY(-1px); /* Added lift effect */
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.profile-connect-card {
+     position: fixed;
+    left: 85%;
+    top: 85px;
+    transform: translateX(-50%);
+    width: 458px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    z-index: 10;
 }

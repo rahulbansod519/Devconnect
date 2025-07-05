@@ -87,7 +87,8 @@ export function AuthorPost() {
     <div className="posts-banner-container">
       <div className="posts-container">
         {posts.length === 0 ? (
-          <p>No posts found. Start writing your first post!</p>
+          <Link to="/post/submit"><p>No posts found. Click here to start writing your first post!</p></Link>
+          
         ) : (
           posts.map((post) => (
             <div key={post.id} className="post-card">
@@ -137,9 +138,6 @@ export function AuthorPost() {
         )}
       </div>
 
-      <div className="posts-banner-footer">
-        <button className="view-all-button">View All Posts</button>
-      </div>
     </div>
   );
 }
